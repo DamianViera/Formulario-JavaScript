@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form prueba JavaScript</title> 
+</head>
+<body>
+	<h1 id="encabezado">Crear Usuario</h1>
+	<form name="formulario">
+		<label for="nombre">Nombre:</label>
+		<input type="text" placeholder="Escribe aqui" maxlength="10" name="nombre" id="nombre" required>
+		</br></br>
+		<input type="radio" name="sexo" id="hombre" value="Hombre" required>Hombre
+		<input type="radio" name="sexo" id="mujer" value="Mujer"required>Mujer
+		</br></br>
+		<label for="mail">E-mail:</label>
+		<input type="text" placeholder="Escribe aqui" name="mail" id="mail" required>
+		</br></br>
+		<label for="pass">Contraseña:</label>
+		<input type="password" placeholder="Escribe aqui" maxlength="15" name="pass" id="pass" required>
+		</br></br>
+		<label for="telefono">Telefono:</label>
+		<input type="text" placeholder="Escribe aqui" maxlength="9" name="telefono" id="telefono">
+		</br></br>
+		<label for="pais">Pais:</label>
+		<select name="pais" id="pais" required>
+			<option selected>Elejir</option>
+			<option value="Argentina">Argentina</option>
+			<option value="Uruguay">Uruguay</option>
+			<option value="Brasil">Brasil</option>
+			<option value="Paraguay">Paraguay</option>
+		</select>
+		</br></br>
+		<label for="direccion">Direccion:</label>
+		<input type="text" placeholder="Escribe aqui" name="direccion" id="direccion">
+		</br></br>
+		<input type="submit" id="btnEnviar" name="btnEnviar" value="Crear">
+	</form>
+	<script>
+		var formulario=document.getElementsByName("formulario")[0];
+	
+		var nombre = formulario.nombre.value;
+		var pass = document.getElementById("pass").value;
+		var mail = document.getElementById("mail").value;
+		var telefono = document.getElementById("telefono").value;
+		var pais = document.getElementById("pais").selectedvalue;
+		var direccion = document.getElementById("direccion").value;
+		document.write(nombre); 
+	//Global - 
+	//Local - 
+	</script>
+</body>
+</html>
